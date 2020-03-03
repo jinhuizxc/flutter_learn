@@ -12,7 +12,7 @@ static Future<bool> exitBy2Click({int duration = 2000, ScaffoldState status}) as
 
   if(_lastPressedAt == null ||
       DateTime.now().difference(_lastPressedAt) >
-          Duration(microseconds: duration)){
+          Duration(milliseconds: duration)){
     //两次点击间隔超过2秒则重新计时
     XToast.toast('再按一次退出程序');
     return Future.value(false);

@@ -4,6 +4,7 @@ import 'package:flutter_sample/router/route.dart';
 import 'package:flutter_sample/utils/click.dart';
 import 'package:flutter_sample/utils/xupdate.dart';
 import 'package:flutter_sample/view/gridview_page.dart';
+import 'package:flutter_sample/view/home/home_drawer.dart';
 
 class MainHomePage extends StatefulWidget {
   @override
@@ -39,11 +40,12 @@ class _MainHomePageState extends State<MainHomePage>
           title: Text(Languages.of(context).title),
           bottom: TabBar(controller: _tabController, tabs: getTabs(context)),
         ),
-//        drawer: HomeDrawer(),
+        drawer: HomeDrawer(),
         body: TabBarView(
-            controller: _tabController, children: getTabViews(context).map((widget){
+            controller: _tabController,
+            children: getTabViews(context).map((widget) {
               return widget;
-        }).toList()),
+            }).toList()),
       ),
       //监听导航栏返回,类似onKeyEvent
       onWillPop: () =>
@@ -60,8 +62,8 @@ class _MainHomePageState extends State<MainHomePage>
   }
 
   List<Widget> getTabViews(BuildContext context) => [
-    GridViewPage(items: RouteMap.getWidgetItems(context)),
-    GridViewPage(items: RouteMap.getUtilsItems(context)),
-    GridViewPage(items: RouteMap.getExpandItems(context)),
-  ];
+        GridViewPage(items: RouteMap.getWidgetItems(context)),
+        GridViewPage(items: RouteMap.getUtilsItems(context)),
+        GridViewPage(items: RouteMap.getExpandItems(context)),
+      ];
 }

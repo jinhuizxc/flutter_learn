@@ -124,7 +124,7 @@ class _LoginPageState extends State<LoginPage> {
             obscureText: !_isShowPassWord,
             //校验密码
             validator: (v){
-              return v.trim().length > 6 ? null : Languages.of(context).passwordError;
+              return v.trim().length >= 6 ? null : Languages.of(context).passwordError;
             },
           ),
           // 登录按钮
