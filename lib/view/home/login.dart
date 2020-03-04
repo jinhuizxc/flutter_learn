@@ -9,6 +9,7 @@ import 'package:flutter_sample/view/loading_dialog.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
 
+// 登录页面
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();

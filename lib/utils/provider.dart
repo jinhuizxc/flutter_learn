@@ -103,6 +103,9 @@ class LocaleModel with ChangeNotifier {
 
   LocaleModel(this._locale);
 
+  // 获取当前Locale的字符串表示
+  String get locale => _locale;
+
   // 获取当前用户的APP语言配置Locale类，如果为null，则语言跟随系统语言
   Locale getLocale() {
     if (_locale == null) return null;
