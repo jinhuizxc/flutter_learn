@@ -82,6 +82,7 @@ class _TextPageState extends State<TextPage> {
               height: 20,
               child: Container(
                 color: Colors.blue,
+                child: Text('text'),
               ),
             ),
             Divider(

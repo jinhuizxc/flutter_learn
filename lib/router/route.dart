@@ -2,7 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/home.dart';
 import 'package:flutter_sample/i10n/localization_intl.dart';
+import 'package:flutter_sample/page/widget/appbar.dart';
+import 'package:flutter_sample/page/widget/bottom_navigation_bar.dart';
+import 'package:flutter_sample/page/widget/button.dart';
+import 'package:flutter_sample/page/widget/cardview.dart';
+import 'package:flutter_sample/page/widget/control.dart';
 import 'package:flutter_sample/page/widget/empty.dart';
+import 'package:flutter_sample/page/widget/tab.dart';
+import 'package:flutter_sample/page/widget/text.dart';
 import 'package:flutter_sample/view/home/login.dart';
 import 'package:flutter_sample/view/listview_page.dart';
 
@@ -16,15 +23,15 @@ class RouteMap{
 
     //============================widget=================================//
 
-//    '/widget/appbar': (BuildContext context) => AppBarPage(Languages.of(context).appBar),
-//    '/widget/button': (BuildContext context) => ButtonPage(Languages.of(context).button),
-//    '/widget/bottom_navigation_bar': (BuildContext context) => BottomNavigationBarPage(Languages.of(context).bottomNavigationBar),
-//    '/widget/cardview': (BuildContext context) => CardViewPage(Languages.of(context).cardView),
-//    '/widget/control': (BuildContext context) => ControlPage(Languages.of(context).control),
-//    '/widget/text': (BuildContext context) => TextPage(Languages.of(context).text),
+    '/widget/appbar': (BuildContext context) => AppBarPage(Languages.of(context).appBar),
+    '/widget/button': (BuildContext context) => ButtonPage(Languages.of(context).button),
+    '/widget/bottom_navigation_bar': (BuildContext context) => BottomNavigationBarPage(Languages.of(context).bottomNavigationBar),
+    '/widget/cardview': (BuildContext context) => CardViewPage(Languages.of(context).cardView),
+    '/widget/control': (BuildContext context) => ControlPage(Languages.of(context).control),
+    '/widget/text': (BuildContext context) => TextPage(Languages.of(context).text),
 //    '/widget/input': (BuildContext context) => InputPage(Languages.of(context).input),
 //    '/widget/form': (BuildContext context) => FormPage(Languages.of(context).form),
-//    '/widget/tab': (BuildContext context) => TabPage(Languages.of(context).tab),
+    '/widget/tab': (BuildContext context) => TabPage(Languages.of(context).tab),
 //    '/widget/dialog': (BuildContext context) => DialogPage(Languages.of(context).dialog),
 //    '/widget/drawer': (BuildContext context) => DrawerPage(Languages.of(context).drawer),
 //    '/widget/progress': (BuildContext context) => ProgressPage(Languages.of(context).progress),
