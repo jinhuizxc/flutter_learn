@@ -8,6 +8,7 @@ import 'package:flutter_sample/page/widget/button.dart';
 import 'package:flutter_sample/page/widget/cardview.dart';
 import 'package:flutter_sample/page/widget/control.dart';
 import 'package:flutter_sample/page/widget/empty.dart';
+import 'package:flutter_sample/page/widget/input.dart';
 import 'package:flutter_sample/page/widget/tab.dart';
 import 'package:flutter_sample/page/widget/text.dart';
 import 'package:flutter_sample/view/home/login.dart';
@@ -29,7 +30,7 @@ class RouteMap{
     '/widget/cardview': (BuildContext context) => CardViewPage(Languages.of(context).cardView),
     '/widget/control': (BuildContext context) => ControlPage(Languages.of(context).control),
     '/widget/text': (BuildContext context) => TextPage(Languages.of(context).text),
-//    '/widget/input': (BuildContext context) => InputPage(Languages.of(context).input),
+    '/widget/input': (BuildContext context) => InputPage(Languages.of(context).input),
 //    '/widget/form': (BuildContext context) => FormPage(Languages.of(context).form),
     '/widget/tab': (BuildContext context) => TabPage(Languages.of(context).tab),
 //    '/widget/dialog': (BuildContext context) => DialogPage(Languages.of(context).dialog),
